@@ -1,0 +1,114 @@
+/* Box Model Hack */
+* {
+   -moz-box-sizing: border-box; /* Firexfox */
+   -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+   -box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+
+body {
+  font-family: 'Stalinist One', cursive;
+  text-align: center;
+}
+
+header {
+  font-family: 'Stalinist One', cursive;
+  font-size: 18px;
+  text-align: left;
+  margin: 5px;
+}
+
+#container
+{
+  margin: auto;
+  text-align: center;
+}
+
+#controls {
+  float: left;
+  width: 380px;
+  border: 4px solid #525252;
+  border-radius: 15px;
+  background: #1973ad;
+  margin-top: 15px;
+}
+
+#input {
+  width: 260px;
+  height: 40px;
+  float: left;
+  margin: 10px;
+  border: 3px solid #000;
+  font-family: 'Stalinist One', cursive;
+  font-size: 16px;
+  box-shadow: 5px 5px 20px #000;  /*For IE9/Final CSS3 spec*/
+  moz-box-shadow: 5px 5px 20px #000;  /*For Firefox*/
+  webkit-box-shadow: 5px 5px 20px #000;  /*For Chrome/Safari*/
+/*  background: #CCC;*/
+
+}
+
+input[type="button"]
+{
+  width: 50px;
+  height: 50px;
+  border: 3px solid #000;
+  margin: 8px;
+  font-size: 14px;
+  text-align: center;
+  font-family: 'Stalinist One', cursive;
+  box-shadow: 5px 5px 20px #000;  /*For IE9/Final CSS3 spec*/
+  moz-box-shadow: 5px 5px 20px #000;  /*For Firefox*/
+  webkit-box-shadow: 5px 5px 20px #000;  /*For Chrome/Safari*/
+}
+
+input[type="button"]:hover {
+  color: white;
+  background-color: black;
+  box-shadow: 7px 7px 20px white;  /*For IE9/Final CSS3 spec*/
+  moz-box-shadow: 7px 7px 20px white;  /*For Firefox*/
+  webkit-box-shadow: 7px 7px 20px white;  /*For Chrome/Safari*/
+
+}
+
+.button {
+
+}
+
+
+
+#display {
+  border: 3px solid #686868;
+  width: 300px;
+  height: 60px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: left;
+  font-family: 'Stalinist One', cursive;
+}
+
+#clear {
+  width: 120px;
+  height: 40px;
+  margin-bottom: 30px;
+}
+
+#clearall {
+  width: 160px;
+  height: 40px;
+}
